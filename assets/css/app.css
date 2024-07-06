@@ -1,0 +1,139 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+
+/* assets/css/app.css */
+
+/* Stylizacja kontenera głównego */
+.main-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.inner-container {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Stylizacja sekcji formularzy */
+.forms {
+    width: 45%;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.search-form,
+.create-form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.search-form label,
+.create-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-form input[type="text"],
+.create-form input[type="text"],
+.create-form input[type="number"],
+.create-form input[type="date"],
+.create-form select{
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.create-form input[type="date"] {
+    margin-bottom: 15px;
+}
+
+input[type="range"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+input[type="range"] {
+    margin-top: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 3px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .15s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #39d25f;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #39d25f;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.create-form input[type="submit"],
+.search-form input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.results {
+    width: 50%;
+}
+
+.results h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.results-table th {
+    background-color: #f0f0f0;
+}
